@@ -1,0 +1,91 @@
+{
+  "functions": [
+    {
+      "id": "GOVERN",
+      "categories": [
+        {
+          "id": "GOVERN-1",
+          "subcategories": [
+            {
+              "id": "GOVERN-1.1",
+              "title": "Legal and regulatory requirements",
+              "preconditions": ["PolicyExists", "LegalReviewDone"],
+              "trustworthiness_impact": ["Accountable & Transparent"]
+            }
+          ]
+        },
+        {
+          "id": "GOVERN-2",
+          "subcategories": [
+            {
+              "id": "GOVERN-2.1",
+              "title": "Roles and responsibilities",
+              "preconditions": ["RolesDefined", "AccountabilityStructureSet"],
+              "trustworthiness_impact": ["Accountable & Transparent"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MAP",
+      "categories": [
+        {
+          "id": "MAP-1",
+          "subcategories": [
+            {
+              "id": "MAP-1.1",
+              "title": "Context and intended purposes",
+              "preconditions": ["ContextEstablished", "SystemBoundariesDefined"],
+              "trustworthiness_impact": ["Valid & Reliable", "Safe"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MEASURE",
+      "categories": [
+        {
+          "id": "MEASURE-2",
+          "subcategories": [
+            {
+              "id": "MEASURE-2.11",
+              "title": "Fairness and bias evaluation",
+              "preconditions": ["BiasTestingDone", "MetricsDefined"],
+              "trustworthiness_impact": ["Fair with Harmful Bias Managed"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MANAGE",
+      "categories": [
+        {
+          "id": "MANAGE-1",
+          "subcategories": [
+            {
+              "id": "MANAGE-1.1",
+              "title": "Risk response and prioritization",
+              "preconditions": ["RiskMitigationsImplemented", "HumanInTheLoop"],
+              "trustworthiness_impact": ["Safe", "Secure & Resilient"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "trustworthiness_characteristics": [
+    "Valid & Reliable", "Safe", "Secure & Resilient", 
+    "Accountable & Transparent", "Explainable & Interpretable", 
+    "Privacy-Enhanced", "Fair with Harmful Bias Managed"
+  ],
+  "semantic_expansions": {
+    "demographic disparities": "MEASURE-2.11",
+    "checked for leaks": "Privacy-Enhanced",
+    "who is responsible": "GOVERN-2.1",
+    "what it's for": "MAP-1.1",
+    "system limits": "MAP-1.1"
+  }
+}

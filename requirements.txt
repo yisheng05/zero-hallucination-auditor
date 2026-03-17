@@ -1,0 +1,9 @@
+rdflib
+pydantic
+langchain
+langchain-google-genai
+google-generativeai
+networkx
+python-dotenv
+pytest
+streamlit

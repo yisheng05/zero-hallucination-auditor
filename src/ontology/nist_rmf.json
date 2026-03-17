@@ -1,0 +1,60 @@
+{
+  "functions": [
+    {
+      "id": "GOVERN",
+      "categories": [
+        {
+          "id": "GOVERN-1",
+          "subcategories": [
+            {
+              "id": "GOVERN-1.1",
+              "preconditions": ["PolicyExists", "RolesDefined"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MAP",
+      "categories": [
+        {
+          "id": "MAP-1",
+          "subcategories": [
+            {
+              "id": "MAP-1.1",
+              "preconditions": ["ContextEstablished", "SystemBoundariesDefined"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MEASURE",
+      "categories": [
+        {
+          "id": "MEASURE-2",
+          "subcategories": [
+            {
+              "id": "MEASURE-2.1",
+              "preconditions": ["BiasTestingDone", "MetricsDefined"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MANAGE",
+      "categories": [
+        {
+          "id": "MANAGE-1",
+          "subcategories": [
+            {
+              "id": "MANAGE-1.1",
+              "preconditions": ["RiskMitigationsImplemented", "HumanInTheLoop"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
