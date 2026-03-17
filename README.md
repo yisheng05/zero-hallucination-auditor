@@ -3,6 +3,8 @@
 An advanced compliance-checking agent for heavily regulated domains (like finance or healthcare). It utilizes a formal cognitive architecture and a stateful situation model to perform verifiable, non-hallucinatory safety audits against the NIST AI Risk Management Framework (AI RMF).
 
 ## 🧠 Cognitive Architecture
+![AI Architecture](./architecture.png)
+
 The agent follows a multi-stage cognitive pipeline to ensure that all decisions are grounded in symbolic logic and that the LLM is only used for perception and rendering:
 
 1.  **Perception Interpretation (TMR)**: Parses natural language system actions into a formal **Text Meaning Representation**.

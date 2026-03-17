@@ -1,0 +1,28 @@
+graph TD
+    User([User Input]) -- "Natural Language" --> Parser[TMR Parser]
+    Parser -- "TMR (Text Meaning Representation)" --> Memory[(Situation Model)]
+    Memory -- "Audit State" --> Auditor[Symbolic Auditor]
+    Ontology[(Ontology Manager<br/>NIST AI RMF)] -- "Framework Logic" --> Auditor
+    Auditor -- "MMR (Mental Meaning Representation)" --> Specifier[Action Specifier]
+    Specifier -- "GMR (Generation Meaning Representation)" --> Renderer[Action Renderer]
+    Renderer -- "Natural Language" --> Agent([Agent Response])
+
+    subgraph "Knowledge & Memory"
+        Memory
+        Ontology
+    end
+
+    subgraph "Cognitive Pipeline"
+        Parser
+        Auditor
+        Specifier
+        Renderer
+    end
+
+    classDef component fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef data fill:#fff3e0,stroke:#e65100,stroke-width:2px;
+    classDef actor fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+
+    class Parser,Auditor,Specifier,Renderer component;
+    class TMR,MMR,GMR,Memory,Ontology data;
+    class User,Agent actor;
